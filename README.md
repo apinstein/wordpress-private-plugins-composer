@@ -42,3 +42,4 @@ composer require "ark-core/ark-core:1.0.0" "fresh-framework/fresh-framework:1.0.
     * MAYBE: `dist/` could be a private binary git repo? 
     * MAYBE: `dist/` could be customizable to dump it directly into the local php project? and then the zips could be checked in (or into a git submodule)
 * I'm not satisfied with the trick of hard-coding all plugins to v1.0.0 -- this was they only way I could figure so far to make this automatable with no manual intervention.
+* Convert this into a plugin command for wp-cli
