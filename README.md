@@ -18,6 +18,20 @@ The script identifies all plugins in the `src/` directory, creates a minimal com
 1. Run `php packagify.php`
 1. Copy/paste the outputted composer commands into your project.
 
+## Example Output
+
+```
+$ php packagify.php
+Found wordpress plugin: ark-core
+Found wordpress plugin: fresh-framework
+Creating /Users/apinstein/dev/wp-private-plugins-repo/src/ark-core/composer.json
+Creating /Users/apinstein/dev/wp-private-plugins-repo/src/fresh-framework/composer.json
+
+Composer Configuration:
+composer config repositories.private-plugins artifact /Users/apinstein/dev/wp-private-plugins-repo/dist
+composer require "ark-core/ark-core:1.0.0" "fresh-framework/fresh-framework:1.0.0"
+```
+
 ## MISC
 
 * Sometimes composer gets confused with the `artifact` if there is an error; try using `composer clearcache` and running things again.
